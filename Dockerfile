@@ -1,5 +1,5 @@
 # Use a lightweight OpenJDK image
-FROM openjdk:8-jdk-slim
- EXPOSE 8080
+FROM openjdk:17-jdk-slim
+ EXPOSE 8084
 ADD target/docker-demo.jar docker-demo.jar
  ENTRYPOINT [ "java","-jar","docker-demo.jar"]
